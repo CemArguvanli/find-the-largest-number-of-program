@@ -1,14 +1,17 @@
-var sayilar = new Array();
+var numberEntry = document.getElementById("numberEntry");
+
+
+var numbers = new Array();
 for (var i = 0; i < 10; i++) {
-    sayilar[i] = prompt(i + ".nci sayıyı girin");
-    document.write(sayilar[i] + "<br/>");
+    numbers[i] = prompt(i + ".nci sayıyı girin");
+    document.write(numbers[i] + "<br/>");
 }
 var enb;
-enb = parseInt(sayilar[0]);
+enb = parseInt(numbers[0]);
 
 for (var i = 0; i < 10; i++) {
-    if (parseInt(sayilar[i]) > enb) {
-        enb = parseInt(sayilar[i]);
+    if (parseInt(numbers[i]) > enb) {
+        enb = parseInt(numbers[i]);
     }
 }
 
